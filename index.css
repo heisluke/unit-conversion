@@ -56,33 +56,61 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 800;
-    font-size: 28px;
-    line-height: 38px;
-    /* identical to box height, or 136% */
     text-align: center;
     letter-spacing: -0.03em;
-    color: #FFFFFF;
 }
 
 .wrapper {
-    min-width: 600px;
-    border: 2px dotted red;
+    box-sizing: border-box;
+    max-width: 600px;
+}
+
+.top-container h1 {
+    font-size: 28px;
+    line-height: 38px;
+    color: #FFFFFF;
 }
 
 .top-container {
-    /* background */
+    box-sizing: border-box;
     width: 100%;
-    left: 0px;
-    top: 0px;
     background: #6943FF;
     padding: 32px 52px;
-
-    display: inline-block;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
     
 }
+
+.bottom-container {
+    box-sizing: border-box;
+    background: #F4F4F4;
+    width: 100%;
+    padding: 36px 25px;
+    display: grid;
+    grid-gap: 24px;
+
+}
+
+.mini-cards {
+    background-color: #FFFFFF;
+    border-radius: 4.68077px 0px 0px 0px;
+    padding: 32px 77px 19px 77px;
+}
+
+h3 {
+    color: #5A537B;
+    padding-bottom: 8px;
+}
+
+p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: #353535;
+
+}
+
 
 input {
     font-family: 'Inter';
@@ -92,6 +120,29 @@ input {
     line-height: 24px;
     text-align: center;
     color: #FFFFFF;
+}
+
+button {
+    width: 117px;
+    height: 42px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+    color: #3D3D3D;
+
+
+    border: none;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+}
+
+.btn-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
 }
 
 .input-num {
@@ -107,12 +158,15 @@ input {
 }
 
 body {
-    border: 20px dotted hotpink;
     display: flex;
     padding: 0;
     margin: 0;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
+    background-color: #1C1C1C;
+    padding-top: 3.5em;
+    padding-bottom: 3.5em;
 }
 
 .input-area {
