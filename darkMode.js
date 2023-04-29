@@ -3,7 +3,8 @@ let miniCards = document.querySelector(".mini-cards");
 let card1 = document.querySelector(".card-1");
 let card2 = document.querySelector(".card-2");
 let card3 = document.querySelector(".card-3");
-
+let bodi = document.body
+let darkShadow = document.querySelector(".wrapper")
 
 
 let themeSwitcher = document.querySelector("#theme-switcher");
@@ -13,5 +14,7 @@ themeSwitcher.addEventListener("click", function () {
     card1.classList.toggle("card-dark-mode")
     card2.classList.toggle("card-dark-mode")
     card3.classList.toggle("card-dark-mode")
+    bodi.classList.toggle("body-dark-mode")
+    darkShadow.classList.toggle("wrapper-dark-mode")
     console.log("what's it?");
 })

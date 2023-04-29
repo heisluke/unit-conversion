@@ -63,6 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 .wrapper {
     box-sizing: border-box;
     max-width: 600px;
+    box-shadow: 10px 10px 70px rgba(17, 24, 39, 0.10);
 }
 
 .top-container h1 {
@@ -74,14 +75,14 @@ h1, h2, h3, h4, h5, h6 {
 .top-container {
     box-sizing: border-box;
     width: 100%;
-    background: #6943FF;
+    background: #10B981;
     padding: 32px 52px;
     
 }
 
 .bottom-container {
     box-sizing: border-box;
-    background: #F4F4F4;
+    background: #D1FAE5;
     width: 100%;
     padding: 36px 25px;
     display: grid;
@@ -93,7 +94,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mini-cards {
-    background-color: #FFFFFF;
+    
+    box-sizing: border-box;
+    background-color: #ECFDF5;
     border-radius: 4.68077px 0px 0px 0px;
     padding: 32px 77px 19px 77px;
 
@@ -102,7 +105,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h3 {
-    color: #5A537B;
+    color: #047857;
     padding-bottom: 8px;
 }
 
@@ -159,8 +162,8 @@ input {
     left: 217px;
     top: 101px;
 
-    background-color: #6943FF;
-    border: 2px solid #B295FF;
+    background-color: #10B981;
+    border: 2px solid #6EE7B7;
     border-radius: 5px;
 }
 
@@ -171,9 +174,12 @@ body {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    background-color: #1C1C1C;
+    background-color: #FFFFFF;
     padding-top: 3.5em;
     padding-bottom: 3.5em;
+
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
 }
 
 .input-area {
@@ -187,7 +193,7 @@ body {
     height: 42px;
     cursor: pointer;
     color: #3D3D3D;
-    background-color: #6943FF;
+    background-color: #10B981;
     
 
     border: 1.5px solid #F4F4F4;
@@ -196,20 +202,38 @@ body {
 }
 
 .dark-mode {
-    background-color: #1F2937;
-    
-    
+    background-color: #111827;
 }
 
 .card-dark-mode {
-    background-color: #273549;
-    color: #FFFFFF;
+    background-color: #1F2937;
 }
 
 .card-dark-mode h3 {
-    color: #CCC1FF;
+    color: #6EE7B7;
 }
 
 .card-dark-mode p {
     color: #FFFFFF;
+}
+
+.body-dark-mode {
+    background-color: #040e08;
+}
+
+.wrapper-dark-mode {
+    box-shadow: 13px 18px 50px rgba(53, 53, 53, 0.07);
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+    .wrapper {
+        max-width: 300px;
+    }
+
+    .mini-cards {
+        padding: 18px 32px 19px 32px;
+    }
 }
