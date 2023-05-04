@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -48,9 +50,6 @@ table {
 }
 
 /*end of CSS Reset file*/
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
-
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Inter', sans-serif;
@@ -161,6 +160,7 @@ input {
     height: 83px;
     left: 217px;
     top: 101px;
+    padding: 0;
 
     background-color: #10B981;
     border: 2px solid #6EE7B7;
@@ -236,6 +236,12 @@ and (max-device-width : 480px) {
 
     .mini-cards {
         padding: 18px 32px 19px 32px;
+    }
+
+    
+    .input-num {
+        box-sizing: border-box;
+        width: 175px;
     }
 }
 
