@@ -230,7 +230,8 @@ and (min-device-width : 320px)
 and (max-device-width : 480px) {
 /* Styles */
     .wrapper {
-        max-width: 300px;
+        min-width: 300px;
+        max-width: 450px;
     }
 
     .mini-cards {
